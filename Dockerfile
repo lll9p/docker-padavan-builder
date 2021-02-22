@@ -13,6 +13,7 @@ RUN \
         bsd-compat-headers python2 python3 zlib-dev \
         automake gettext gettext-dev autoconf bison \
         flex coreutils cmake git libtool gawk sudo \
+        rsync \
         && rm -rf /var/cache/apk/* \
         && git config --global user.email '<>' \
         && git config --global user.name 'lll9p'\
