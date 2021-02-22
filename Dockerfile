@@ -16,7 +16,7 @@ RUN \
         && rm -rf /var/cache/apk/* \
         && git config --global user.email '<>' \
         && git config --global user.name 'lll9p'\
-        && groupadd -r build && useradd -r -u 1000 -g build build \
+        && addgroup -S build && adduser -S build -G build -u 1000 \
         && echo '%build ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
         && git config --global user.email '<>' \
         && rm -rf /var/cache/apk/* \
